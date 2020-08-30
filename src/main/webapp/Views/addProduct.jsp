@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="products">All Products</a></li>
-                <li><a href="addProduct">Add Product</a></li>
+                <li><a href="addproduct">Add Product</a></li>
             </ul>
         </nav>
         <form:form >

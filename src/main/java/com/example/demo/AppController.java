@@ -20,4 +20,12 @@ public class AppController {
         System.out.println(productList);
         return new ModelAndView(viewName, "productList", productList);
     }
+
+    @RequestMapping("/addproduct")
+    public ModelAndView getAddProductPage() {
+        System.out.println("getAddProductPage");
+
+        String viewName = "/addProduct";
+        return new ModelAndView(viewName);
+    }
 }

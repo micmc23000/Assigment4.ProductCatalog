@@ -10,24 +10,24 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>All Products</title>
     </head> 
-   <body>
-               <header><h1>Product Catalog</h1></header>
+    <body>
+        <header><h1>Product Catalog</h1></header>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/allproducts">All Products</a></li>
+                <li><a href="products">All Products</a></li>
+                <li><a href="addProduct">Add Product</a></li>
             </ul>
         </nav>
         <table style="width:100%">
             <tr>
-            <th align="left">Code</th>
-             <th align="left">Name</th>
-             <th align="left">Description</th>
-             <th align="left">Buy Price</th>
-             <th align="left">Sell Price</th>
-             <th align="left">Qty In Stock</th>
-             <th align="left">Actions</th>
+                <th align="left">Code</th>
+                <th align="left">Name</th>
+                <th align="left">Description</th>
+                <th align="left">Buy Price</th>
+                <th align="left">Sell Price</th>
+                <th align="left">Qty In Stock</th>
+                <th align="left">Actions</th>
             </tr>
             <c:forEach items="${productList}" var="product"> 
                 <tr>
@@ -41,6 +41,6 @@
                 </tr>
             </c:forEach>
         </table>
-             
+
     </body>
 </html>

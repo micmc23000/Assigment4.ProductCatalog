@@ -7,14 +7,21 @@
     <head>
     </head>
     <body>
-        
+        <header><h1>Product Catalog</h1></header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="products">All Products</a></li>
+                <li><a href="addProduct">Add Product</a></li>
+            </ul>
+        </nav>
         <form:form >
             <table>
                 <tr> 
                     <td><form:label path="code">Code</form:label></td>
                     <td><form:input path="code"/></td> 
                     <td style="color:red"><form:errors path="code"/> </td>
-               </tr> 
+                </tr> 
                 <tr>
                     <td><form:label path="name">Name</form:label></td>
                     <td><form:input path="name" /></td>
@@ -24,25 +31,25 @@
                     <td><form:label path="description">Description</form:label></td>
                     <td><form:input path="description"/></td>
                     <td style="color:red"><form:errors path="description"/> </td>
-                    
+
                 </tr>
                 <tr>
                     <td><form:label path="buyPrice">Buy Price</form:label></td>
                     <td><form:input path="buyPrice"/></td>
                     <td style="color:red"> <form:errors path="buyPrice"/> </td>
                 </tr>
-               <tr>
+                <tr>
                     <td><form:label path="sellPrice">Sell Price</form:label></td>
                     <td><form:input path="sellPrice"/></td>
                     <td style="color:red"> <form:errors path="sellPrice"/> </td>
                 </tr>
-               
+
                 <tr>
-                    
+
                     <td><form:label path="quantityInStock">Quantity In Stock</form:label></td>
                     <td><form:input type="quantityInStock" path="quantityInStock"/></td>
                     <td style="color:red"> <form:errors path="quantityInStock"/> </td>
-                   
+
                 </tr>
                 <tr>
                     <td><input type="submit" value="Add Product"/></td>
